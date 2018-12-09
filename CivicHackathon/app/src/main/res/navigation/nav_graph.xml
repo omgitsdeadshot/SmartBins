@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signinScreen">
+
+    <fragment
+        android:id="@+id/signinScreen"
+        android:name="com.example.hafiz.civichackathon.signinScreen"
+        android:label="fragment_signin_screen"
+        tools:layout="@layout/fragment_signin_screen" >
+        <action
+            android:id="@+id/action_signinScreen_to_mapScreen"
+            app:destination="@id/mapScreen"
+            app:enterAnim="@animator/fastscroll__default_show" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapScreen"
+        android:name="com.example.hafiz.civichackathon.mapScreen"
+        android:label="fragment_map_screen"
+        tools:layout="@layout/fragment_map_screen" />
+</navigation>
